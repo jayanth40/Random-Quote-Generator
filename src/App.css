@@ -14,14 +14,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2b3d60;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
@@ -35,4 +34,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card-q{
+  background-color: #61dafb;
+  border-radius: 5px;
+  width: 500px;
+  height: max-content;
+  
+}
+.head-q{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+ 
+}
+.auth-q{
+  margin-top: 0px;
+  margin-left: 350px;
+  
+}
+.butt-q{
+  margin-bottom: 30px;
+  background-color: rgb(178, 201, 224);
+  box-shadow: 4px 3px 2px rgb(128, 116, 140);
+  border: none;
+  border-radius: 3px;
+  margin-left: 270px;
+  height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.butt-b{
+  display: flex;
+  
+}
+.butt-a{
+  margin-bottom: 30px;
+  background-color: rgb(178, 201, 224);
+  box-shadow: 4px 3px 2px rgb(128, 116, 140);
+  border: none;
+  border-radius: 3px;
+  margin-left: 30px;
+  height: 30px;
+  
+  cursor: pointer;
+  text-decoration: none;
+  width: 60px;
+  text-align: center;
+  font-size: 18px;
 }
