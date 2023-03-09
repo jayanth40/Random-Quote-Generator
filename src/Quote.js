@@ -4,7 +4,7 @@ import axios from "axios";
 
 function Quote(){
     const [data,setData] = useState(null)
-    let [index,setIndex] = useState(0)
+    let [index,setIndex] = useState(234)
     useEffect(()=>{
         const fetchdata = async ()=>{
             const quote = await axios.get("https://type.fit/api/quotes")
