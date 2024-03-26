@@ -4,7 +4,7 @@ import axios from "axios";
 
 function Quote(){
     const [data,setData] = useState(null)
-    let [index,setIndex] = useState(234)
+    let [index,setIndex] = useState(1)
     useEffect(()=>{
         const fetchdata = async ()=>{
             const quote = await axios.get("https://type.fit/api/quotes")
@@ -18,7 +18,7 @@ function Quote(){
     
     
     const handle =() =>{
-        let random = Math.floor(Math.random()*1642)
+        let random = Math.floor(Math.random()*1)
         setIndex(random)
        
     }
