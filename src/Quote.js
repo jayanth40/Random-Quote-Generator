@@ -9,8 +9,6 @@ function Quote(){
         const fetchdata = async ()=>{
             const quote = await axios.get("https://type.fit/api/quotes")
             setData(quote.data)
-            console.log(data);
-
         }
         fetchdata()
         
@@ -18,13 +16,14 @@ function Quote(){
     
     
     const handle =() =>{
-        let random = Math.floor(Math.random()*1)
-        setIndex(random)
-       
+        if(data?.length - 1 === index){
+            setIndex(0)
+        }
+        else setIndex(index+1)
     }
    
     return(<>
-    <div className="card-q" style={{ backgroundColor: `rgb(${index}, ${index}, ${index})`}}>
+    <div className="card-q" style={{ backgroundColor: `rgb(${100+index}, ${140+index}, ${120+index})`}}>
     <p className="head-q">{data?.[index]?.text}..!</p>
     <p className="auth-q">- {data?.[index]?.author || "unknown"}</p>
     <div className="butt-b">
